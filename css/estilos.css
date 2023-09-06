@@ -1,0 +1,55 @@
+body {
+  align-items: center;
+  background: linear-gradient(45deg, #600051 0%,#000 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;}
+
+h1 {
+  color: lime;
+  background: black;
+  border: solid 2px purple;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 2rem;}
+
+.teclado {
+  background: linear-gradient(to bottom, green 0%,purple 100%);
+  box-shadow: 6px 8px 0 6px black, 10px 10px 10px #000;
+  border: solid 2px lime;
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;}
+
+.tecla {
+  background-color: #083200;
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 black;
+  color: red;
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.05em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;}
+
+.tecla.ativa, .tecla:active {
+  background-color: red;
+  border: 4px solid  red;
+  box-shadow: 3px 3px 0 #730000b7 inset;
+  color: white;
+  outline: none;}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px yellow;}
+
+.tecla.ativa:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 #730000b7 inset, 1px 1px 10px yellow;}
