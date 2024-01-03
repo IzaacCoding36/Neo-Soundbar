@@ -1,4 +1,4 @@
-# Necro-Media
+# Neo-Media
 Esse repositório foi criado para exibir uma página funcional com implementação de áudios via JavaScript.
 
 Nesse site, foram utilizados alguns sons famosos pela internet como um "soundboard", enfim, confira o código disponibilizado como exemplo.
