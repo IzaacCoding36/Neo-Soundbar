@@ -1,24 +1,33 @@
 body {
   align-items: center;
-  background: linear-gradient(45deg, #600051 0%,#000 100%);
+  background: linear-gradient(45deg, #070060 ,#000 100%);
   display: flex;
   justify-content: center;
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;}
 
+@keyframes glow { 0% {box-shadow: 0px 0px 30px blue;}
+            25% {box-shadow: 0px 0px 15px blue;}
+            50% {box-shadow: 0px 0px 30px teal;}
+            75% {box-shadow: 0px 0px 15px blue;}
+            100% {box-shadow: 0px 0px 30px blue;}
+}
+
 h1 {
   color: lime;
+  padding: 10px;
   background: black;
-  border: solid 2px purple;
-  box-shadow: 0px 0px 15px purple;
+  border: solid 2px teal;
+  box-shadow: 0px 0px 15px blue;
   border-radius: 10px;
   margin-bottom: 20px;
-  font-size: 2rem;}
+  font-size: 2rem; 
+  animation-name: glow; animation-duration: 4s; animation-delay: 1.5s; animation-iteration-count: infinite;}
 
 .teclado {
-  background: linear-gradient(to bottom, green 0%,purple 100%);
-  box-shadow: 6px 8px 6px black, 10px 10px 10px #000;
+  background: linear-gradient(to bottom, black,#070060,blue);
+  box-shadow: 6px 8px 6px black, 10px 10px 10px #000, 0px 0px 15px lime;
   border: solid 2px lime;
   border-radius: 30px;
   display: grid;
@@ -27,9 +36,9 @@ h1 {
   padding: 10px;}
 
 .tecla {
-  background-color: #083200;
+  background-color: #03002a;
   border-radius: 30px;
-  box-shadow: 3px 3px 0 black;
+  box-shadow: 3px 3px 0px black;
   color: red;
   cursor: pointer;
   height: 120px;
@@ -42,15 +51,17 @@ h1 {
 .tecla.ativa, .tecla:active {
   background-color: red;
   border: 4px solid  red;
-  box-shadow: 3px 3px 0 #730000b7 inset;
+  box-shadow: 3px 3px 0px #730000b7 inset;
   color: white;
   outline: none;}
 
+.tecla:hover { 
+  box-shadow: 1px 1px 10px lime;}
+
 .tecla.focus,
 .tecla:focus {
-  outline: none;
-  box-shadow: 1px 1px 10px yellow;}
+  outline: none;}
 
 .tecla.ativa:focus,
 .tecla:active:focus {
-  box-shadow: 3px 3px 0 #730000b7 inset, 1px 1px 10px yellow;}
+  box-shadow: 3px 3px 0px #730000b7 inset, 1px 1px 10px lime;}
