@@ -56,7 +56,7 @@ h1 {
   outline: none;}
 
 .tecla:hover { 
-  box-shadow: 1px 1px 10px lime;}
+  box-shadow: 1px 1px 10px lime; transition: box-shadow 0.3s;}
 
 .tecla.focus,
 .tecla:focus {
