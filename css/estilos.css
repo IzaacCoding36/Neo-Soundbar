@@ -1,3 +1,7 @@
+html {
+  background-color: #070060;
+}
+
 body {
   align-items: center;
   background: linear-gradient(45deg, #070060 ,#000 100%);
