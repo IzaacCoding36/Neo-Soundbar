@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=500&size=17&pause=1000&color=00FF06&background=0E005100&center=true&vCenter=true&width=1000&height=100&lines=Neo+Soundbar;Soundboard+de+sons+famosos+da+internet)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=500&size=17&pause=1000&color=00FF06&background=0E0051&center=true&vCenter=true&width=1000&height=100&lines=Neo+Soundbar;Soundboard+de+sons+famosos+da+internet)](https://git.io/typing-svg)
 ***
 # Neo-Soundbar
 _|| Esse repositório foi criado para exibir uma página com implementação de áudios via JavaScript. ||_
