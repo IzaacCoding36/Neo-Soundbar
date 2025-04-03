@@ -1,5 +1,6 @@
 html {background-color: #070060;
       background: linear-gradient(90deg, #070060 0%, #000 50%, #070060 100%);
+      color: #070060;
       animation: gradientBG 20s ease infinite;
       background-size: 200% 200%;}
 
@@ -7,6 +8,7 @@ body {align-items: center;
       background: linear-gradient(90deg, #070060 0%, #000 50%, #070060 100%);
       background-size: 200% 200%;
       background-color: #070060;
+      color: #070060;
       display: flex;
       justify-content: center;
       flex-direction: column;
