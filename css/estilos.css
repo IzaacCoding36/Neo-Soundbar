@@ -68,7 +68,8 @@
 
 /* Global Styles */
 html {
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
+  background-color: darkblue;
   background-attachment: fixed;
   min-height: 100vh;
 }
