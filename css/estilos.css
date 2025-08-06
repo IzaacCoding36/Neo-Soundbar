@@ -20,7 +20,7 @@
   --gray-900: #111827;
   
   /* Background */
-  --bg-primary: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  --bg-primary: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
   --bg-secondary: rgba(255, 255, 255, 0.1);
   --bg-card: rgba(255, 255, 255, 0.1);
   
@@ -108,6 +108,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  text-shadow: 0 0 20px rgba(16, 185, 129, 0.5), 0 0 40px rgba(16, 185, 129, 0.3);
   letter-spacing: -0.025em;
 }
 
@@ -122,10 +123,10 @@ header {
 .soundboard {
   backdrop-filter: blur(20px);
   background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.3);
   border-radius: var(--radius-2xl);
   padding: var(--space-8);
-  box-shadow: var(--shadow-xl);
+  box-shadow: var(--shadow-xl), 0 0 30px rgba(16, 185, 129, 0.2);
 }
 
 .button-grid {
@@ -137,8 +138,8 @@ header {
 /* Sound Buttons */
 .sound-button {
   position: relative;
-  background: linear-gradient(135deg, rgba(220, 38, 38, 0.8), rgba(185, 28, 28, 0.6));
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.8), rgba(5, 150, 105, 0.6));
+  border: 1px solid rgba(16, 185, 129, 0.4);
   border-radius: var(--radius-xl);
   padding: var(--space-6);
   min-height: 120px;
@@ -152,6 +153,7 @@ header {
   font-weight: 500;
   font-size: var(--font-size-base);
   color: white;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3), 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .sound-button::before {
@@ -161,7 +163,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.6), rgba(34, 197, 94, 0.4));
   opacity: 0;
   transition: opacity var(--transition-base);
   border-radius: var(--radius-xl);
@@ -171,15 +173,15 @@ header {
   position: relative;
   z-index: 1;
   font-weight: 600;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(16, 185, 129, 0.5);
 }
 
 /* Button States */
 .sound-button:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-  border-color: rgba(255, 255, 255, 0.4);
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.9), rgba(220, 38, 38, 0.7));
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.6), 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-color: rgba(16, 185, 129, 0.7);
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.9), rgba(16, 185, 129, 0.7));
 }
 
 .sound-button:hover::before {
@@ -189,8 +191,8 @@ header {
 .sound-button:active,
 .sound-button.ativa {
   transform: translateY(0);
-  box-shadow: var(--shadow-md);
-  background: linear-gradient(135deg, rgba(185, 28, 28, 0.9), rgba(153, 27, 27, 0.8));
+  box-shadow: 0 0 40px rgba(16, 185, 129, 0.8), 0 4px 15px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.9), rgba(4, 120, 87, 0.8));
 }
 
 .sound-button:active::before,
@@ -200,7 +202,7 @@ header {
 
 .sound-button:focus {
   outline: none;
-  box-shadow: var(--shadow-lg), 0 0 0 3px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.5), 0 0 0 3px rgba(16, 185, 129, 0.4);
 }
 
 /* Responsive Design */
