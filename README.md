@@ -1,4 +1,6 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Inter&weight=600&size=24&pause=1000&color=6366F1&background=FFFFFF00&center=true&vCenter=true&width=1000&height=80&lines=Neo+Soundbar;Soundboard+Moderno+e+Responsivo)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=500&size=17&pause=1000&color=30C562&background=0C0D29&center=true&vCenter=true&width=1000&height=100&lines=Neo+Soundbar;Funny+Sounds)](https://git.io/typing-svg)
+
+---
 
 # 🎵 Neo Soundbar
 
@@ -29,7 +31,3 @@ Um projeto de soundboard completamente modernizado, apresentando uma interface e
 - **Design Responsivo** com CSS Grid e Flexbox
 
 ![](https://media.tenor.com/QU-5UcsfWuEAAAAj/master-chief-dance.gif)
-
----
-
-**Desenvolvido com ❤️ para a comunidade**
