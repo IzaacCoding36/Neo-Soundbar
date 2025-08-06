@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="IzaacCoding36">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Esse site apresenta um soundboard criado com JavaScript.">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Soundboard, Memes">
+    <meta name="description" content="Soundboard moderno com sons famosos da internet - Neo Soundbar">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Soundboard, Memes, Audio, Interface Moderna">
+    <meta name="theme-color" content="#6366f1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -17,30 +18,59 @@
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
-    <title>Neo Soundbar</title>
+    <title>Neo Soundbar - Soundboard Moderno</title>
 </head>
 <body>
-    <h1>Neo Soundbar</h1>
-    <section class="teclado">
-        <button class="tecla tecla_1">Bruh</button></button>
-        <button class="tecla tecla_2">Error</button>
-        <button class="tecla tecla_3">Oof</button>
-        <button class="tecla tecla_4">WhatsApp</button>
-        <button class="tecla tecla_5">Boom</button>
-        <button class="tecla tecla_6">Discord</button>
-        <button class="tecla tecla_7">Amogus</button>
-        <button class="tecla tecla_8">Ohio</button>
-        <button class="tecla tecla_9">Hadouken</button>
-    </section>
-    <audio src="sounds/Bruh.mp3" id="som_tecla_1"></audio>
-    <audio src="sounds/Error.mp3" id="som_tecla_2"></audio>
-    <audio src="sounds/Oof.mp3" id="som_tecla_3"></audio>
-    <audio src="sounds/whatsapp.mp3" id="som_tecla_4"></audio>
-    <audio src="sounds/Boom.mp3" id="som_tecla_5"></audio>
-    <audio src="sounds/Discord.mp3" id="som_tecla_6"></audio>
-    <audio src="sounds/Amogus.mp3" id="som_tecla_7"></audio>
-    <audio src="sounds/Ohio.mp3" id="som_tecla_8"></audio>
-    <audio src="sounds/Hadouken.mp3" id="som_tecla_9"></audio>
+    <main class="container">
+        <header>
+            <h1 class="title">Neo Soundbar</h1>
+            <p class="subtitle">Soundboard moderno com sons da internet</p>
+        </header>
+        
+        <section class="soundboard" role="main" aria-label="Soundboard com botões de áudio">
+            <div class="button-grid">
+                <button class="sound-button tecla tecla_1" aria-label="Reproduzir som Bruh">
+                    <span class="button-text">Bruh</span>
+                </button>
+                <button class="sound-button tecla tecla_2" aria-label="Reproduzir som Error">
+                    <span class="button-text">Error</span>
+                </button>
+                <button class="sound-button tecla tecla_3" aria-label="Reproduzir som Oof">
+                    <span class="button-text">Oof</span>
+                </button>
+                <button class="sound-button tecla tecla_4" aria-label="Reproduzir som WhatsApp">
+                    <span class="button-text">WhatsApp</span>
+                </button>
+                <button class="sound-button tecla tecla_5" aria-label="Reproduzir som Boom">
+                    <span class="button-text">Boom</span>
+                </button>
+                <button class="sound-button tecla tecla_6" aria-label="Reproduzir som Discord">
+                    <span class="button-text">Discord</span>
+                </button>
+                <button class="sound-button tecla tecla_7" aria-label="Reproduzir som Amogus">
+                    <span class="button-text">Amogus</span>
+                </button>
+                <button class="sound-button tecla tecla_8" aria-label="Reproduzir som Ohio">
+                    <span class="button-text">Ohio</span>
+                </button>
+                <button class="sound-button tecla tecla_9" aria-label="Reproduzir som Hadouken">
+                    <span class="button-text">Hadouken</span>
+                </button>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Audio elements -->
+    <audio src="sounds/Bruh.mp3" id="som_tecla_1" preload="auto"></audio>
+    <audio src="sounds/Error.mp3" id="som_tecla_2" preload="auto"></audio>
+    <audio src="sounds/Oof.mp3" id="som_tecla_3" preload="auto"></audio>
+    <audio src="sounds/whatsapp.mp3" id="som_tecla_4" preload="auto"></audio>
+    <audio src="sounds/Boom.mp3" id="som_tecla_5" preload="auto"></audio>
+    <audio src="sounds/Discord.mp3" id="som_tecla_6" preload="auto"></audio>
+    <audio src="sounds/Amogus.mp3" id="som_tecla_7" preload="auto"></audio>
+    <audio src="sounds/Ohio.mp3" id="som_tecla_8" preload="auto"></audio>
+    <audio src="sounds/Hadouken.mp3" id="som_tecla_9" preload="auto"></audio>
+    
     <script src="main.js"></script>
 </body>
 </html>
