@@ -20,9 +20,9 @@
   --gray-900: #111827;
   
   /* Background */
-  --bg-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --bg-primary: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   --bg-secondary: rgba(255, 255, 255, 0.1);
-  --bg-card: rgba(255, 255, 255, 0.15);
+  --bg-card: rgba(255, 255, 255, 0.1);
   
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -137,7 +137,7 @@ header {
 /* Sound Buttons */
 .sound-button {
   position: relative;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.8), rgba(185, 28, 28, 0.6));
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-xl);
   padding: var(--space-6);
@@ -179,6 +179,7 @@ header {
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
   border-color: rgba(255, 255, 255, 0.4);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.9), rgba(220, 38, 38, 0.7));
 }
 
 .sound-button:hover::before {
@@ -189,6 +190,7 @@ header {
 .sound-button.ativa {
   transform: translateY(0);
   box-shadow: var(--shadow-md);
+  background: linear-gradient(135deg, rgba(185, 28, 28, 0.9), rgba(153, 27, 27, 0.8));
 }
 
 .sound-button:active::before,
